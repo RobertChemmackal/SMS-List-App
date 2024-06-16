@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">SmsApp</string>
+    <string name="lbl_splash">Welcome to SMS World</string>
+    <string name="add_sms">Add Sms</string>
+    <string name="sms_List">SMS LIST</string>
+    <string name="sent_sms">SEND SMS</string>
+    <string name="sent_sms_to_number">Enter valid mobile number for sending recent SMS to user in specified time duration</string>
+    <string name="time_duration">Enter Time Duration in minutes for Sending Sms</string>
+    <string name="mobile">Enter Mobile</string>
+    <string name="schedule">Schedule</string>
+    <string name="cancel">Cancel</string>
+    <string name="cancel_job">Cancel Job</string>
+    <string name="enable_permission">Enable Permission</string>
+    <string name="validate_mobile">Enter valid Mobile number</string>
+    <string name="job_scheduled">Job Scheduled for the Given time</string>
+    <string name="validate_time">Enter time duration in minutes for Scheduling SMS</string>
+    <string name="job_canceled">Schedule Job is Cancelled</string>
+    <string name="permission_alert">This app requires permission for read,send SMS and read contact.Grant permsiion for further use</string>
+</resources>
