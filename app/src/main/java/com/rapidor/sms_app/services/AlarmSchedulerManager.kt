@@ -21,8 +21,10 @@ class AlarmSchedulerManager(private val context: Context):AlarmSchedule {
     }
     override fun scheduleAlarm(alarmSchedule: AlarmTriggerModel) {
         val manager = context.getSystemService(ALARM_SERVICE) as AlarmManager
+
         val minutes = alarmSchedule.time
-        val millisecondsForSms = (minutes * 60000)
+        val millisecondsForSms = (minutes * 60000).toLong()
+
 
         val randomCode: Int = Random().nextInt(61) + 20
 
@@ -54,7 +56,7 @@ class AlarmSchedulerManager(private val context: Context):AlarmSchedule {
         ))*/
 
         try {
-            val i: Intent = Intent(context, SmsBroadCastService::class.java)
+            val i = Intent(context, SmsBroadCastService::class.java)
             val pi = PendingIntent.getService(context, sharedPreferences.getStringPref(
                 KEY_REQ_CODE).toInt(), i, PendingIntent.FLAG_UPDATE_CURRENT or
                     PendingIntent.FLAG_MUTABLE

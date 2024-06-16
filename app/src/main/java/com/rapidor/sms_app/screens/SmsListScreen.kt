@@ -219,7 +219,7 @@ fun showAddNewSmsAlert(context: Context, sharedPreferences: SharedPreferenceMana
         var textMobile by remember { mutableStateOf("") }
         var textDuration by remember { mutableStateOf("") }
         val maxCharMobile = 10
-        val maxCharMinutes = 100
+        val maxCharMinutes = 3
 
         val schedule = AlarmSchedulerManager(context)
         var alarmItem: AlarmTriggerModel
